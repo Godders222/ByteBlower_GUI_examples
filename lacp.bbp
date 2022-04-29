@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="ASCII"?>
+<byteblowerguimodel_v1_3:ByteBlowerProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:byteblowerguimodel_v1_3="http:///com.excentis.products.byteblower.gui.model.ecore" name="lcap" author="craig.g" modelVersion="2.16.4" defaultBatchInitializationTime="10000000000" warningLossLevel="0.01" errorLossLevel="0.02" reportOutputToHtml="true" reportOutputToExcel="false" reportOutputToCsv="true" reportOutputToJson="false" reportProjectBackup="true" usingHighcharts="true" throughputUnit="Mbps" scenarioIdenticalFramesWarning="true" scenarioPauseAfterDhcp="true" scenarioEnableScoutingFrames="true" scenarioIgnoreInitializationErrors="false" scenarioWaitTimeAfterScenario="5000000000" throughputType="FrameOnly" dhcpTimeout="1000000000" numberOfDecimals="2" dhcpRetries="5" latencyRangeStart="0" latencyRangeEnd="100000000" latencyUnit="14" numberOfLatencyDecimals="3" reportOutputToPdf="true" ScenarioHttpAllowAlive="9223372036854775807" scenarioAutomaticTcpRestart="true">
+  <Scenario name="SCENARIO_1">
+    <measurements xsi:type="byteblowerguimodel_v1_3:FlowMeasurement" flow="//@Flow.0">
+      <flowStartEvent scheduledTime="0"/>
+      <flowStopEvent scheduledTime="10000000000"/>
+    </measurements>
+  </Scenario>
+  <Flow name="FLOW_1" source="//@ByteBlowerGuiPort.0" destination="//@ByteBlowerGuiPort.1" FlowTemplate="//@FlowTemplate.0" latencyAndJitterType="No" flowMeasurement="//@Scenario.0/@measurements.0" tos="0"/>
+  <FlowTemplate xsi:type="byteblowerguimodel_v1_3:FrameBlastingFlow" name="PcapFlow" Flow="//@Flow.0" frameInterval="10000000" dataRateUnit="kbps">
+    <frameBlastingFrames weight="1" frame="//@Frame.1"/>
+    <frameBlastingFrames weight="1" frame="//@Frame.2"/>
+    <frameBlastingFrames weight="1" frame="//@Frame.3"/>
+    <frameBlastingFrames weight="1" frame="//@Frame.4"/>
+    <frameBlastingFrames weight="1" frame="//@Frame.5"/>
+    <frameBlastingFrames weight="1" frame="//@Frame.6"/>
+    <frameBlastingFrames weight="1" frame="//@Frame.7"/>
+    <frameBlastingFrames weight="1" frame="//@Frame.8"/>
+    <frameBlastingFrames weight="1" frame="//@Frame.9"/>
+    <frameBlastingFrames weight="1" frame="//@Frame.10"/>
+    <frameBlastingFrames weight="1" frame="//@Frame.11"/>
+    <frameBlastingFrames weight="1" frame="//@Frame.12"/>
+    <frameBlastingFrames weight="1" frame="//@Frame.13"/>
+    <frameBlastingFrames weight="1" frame="//@Frame.14"/>
+    <frameBlastingFrames weight="1" frame="//@Frame.15"/>
+    <frameBlastingFrames weight="1" frame="//@Frame.16"/>
+    <frameBlastingFrames weight="1" frame="//@Frame.17"/>
+    <frameBlastingFrames weight="1" frame="//@Frame.18"/>
+    <frameBlastingFrames weight="1" frame="//@Frame.19"/>
+    <frameBlastingFrames weight="1" frame="//@Frame.20"/>
+  </FlowTemplate>
+  <Frame name="FRAME_1" bytesHexString="0000000000000000000000000800450003F202780000FE11B27F01010101010101011000100003DECCC9457863656E7469732042797465426C6F7765722044656661756C74205061796C6F61642E00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" L2AutoSourceMac="true" L2AutoDestMac="true" L3AutoSourceIp="true" L3AutoDestIp="true" L3AutoHeaderCheck="true" L3AutoTotLen="true" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="true" L4AutoTotLen="true" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" L4AllowPortOverride="true">
+    <modifiers xsi:type="byteblowerguimodel_v1_3:UniqueFieldModifier" fieldLength="1" offset="0"/>
+  </Frame>
+  <Frame name="PcapFrame1" bytesHexString="0180c20000020013c4120f0d88090101011480000013c4120f00000d800000168500000002148000000e8316f500000d80000019360000000310800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" L2AutoSourceMac="false" L2AutoDestMac="false" L3AutoSourceIp="false" L3AutoDestIp="false" L3AutoHeaderCheck="false" L3AutoTotLen="false" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="false" L4AutoTotLen="false" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.0" L4AllowPortOverride="true"/>
+  <Frame name="PcapFrame2" bytesHexString="0180c20000020013c4120f0d88090101011480000013c4120f00000d800000168500000002148000000e8316f500000d80000019360000000310800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" L2AutoSourceMac="false" L2AutoDestMac="false" L3AutoSourceIp="false" L3AutoDestIp="false" L3AutoHeaderCheck="false" L3AutoTotLen="false" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="false" L4AutoTotLen="false" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.1" L4AllowPortOverride="true"/>
+  <Frame name="PcapFrame3" bytesHexString="0180c20000020013c4120f0d88090101011480000013c4120f00000d800000168500000002148000000e8316f500000d80000019360000000310800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" L2AutoSourceMac="false" L2AutoDestMac="false" L3AutoSourceIp="false" L3AutoDestIp="false" L3AutoHeaderCheck="false" L3AutoTotLen="false" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="false" L4AutoTotLen="false" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.2" L4AllowPortOverride="true"/>
+  <Frame name="PcapFrame4" bytesHexString="0180c20000020013c4120f0d88090101011480000013c4120f00000d800000164d00000002140000000000000000000000000000000000000310800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" L2AutoSourceMac="false" L2AutoDestMac="false" L3AutoSourceIp="false" L3AutoDestIp="false" L3AutoHeaderCheck="false" L3AutoTotLen="false" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="false" L4AutoTotLen="false" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.3" L4AllowPortOverride="true"/>
+  <Frame name="PcapFrame5" bytesHexString="0180c20000020013c4120f0d88090101011480000013c4120f00000d800000167d00000002140000000000000000000000000000000000000310800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" L2AutoSourceMac="false" L2AutoDestMac="false" L3AutoSourceIp="false" L3AutoDestIp="false" L3AutoHeaderCheck="false" L3AutoTotLen="false" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="false" L4AutoTotLen="false" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.4" L4AllowPortOverride="true"/>
+  <Frame name="PcapFrame6" bytesHexString="0180c20000020013c4120f0d88090101011480000013c4120f00000d800000167d00000002140000000000000000000000000000000000000310800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" L2AutoSourceMac="false" L2AutoDestMac="false" L3AutoSourceIp="false" L3AutoDestIp="false" L3AutoHeaderCheck="false" L3AutoTotLen="false" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="false" L4AutoTotLen="false" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.5" L4AllowPortOverride="true"/>
+  <Frame name="PcapFrame7" bytesHexString="0180c20000020013c4120f0d88090101011480000013c4120f00000d800000167d00000002140000000000000000000000000000000000000310800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" L2AutoSourceMac="false" L2AutoDestMac="false" L3AutoSourceIp="false" L3AutoDestIp="false" L3AutoHeaderCheck="false" L3AutoTotLen="false" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="false" L4AutoTotLen="false" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.6" L4AllowPortOverride="true"/>
+  <Frame name="PcapFrame8" bytesHexString="0180c20000020013c4120f0d88090101011480000013c4120f00000d800000167d00000002140000000000000000000000000000000000000310800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" L2AutoSourceMac="false" L2AutoDestMac="false" L3AutoSourceIp="false" L3AutoDestIp="false" L3AutoHeaderCheck="false" L3AutoTotLen="false" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="false" L4AutoTotLen="false" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.7" L4AllowPortOverride="true"/>
+  <Frame name="PcapFrame9" bytesHexString="0180c2000002000e8316f5108809010101148000000e8316f500000d800000190c000000021480000013c4120f00000d80000016750000000310800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" L2AutoSourceMac="false" L2AutoDestMac="false" L3AutoSourceIp="false" L3AutoDestIp="false" L3AutoHeaderCheck="false" L3AutoTotLen="false" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="false" L4AutoTotLen="false" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.8" L4AllowPortOverride="true"/>
+  <Frame name="PcapFrame10" bytesHexString="0180c20000020013c4120f0d88090101011480000013c4120f00000d800000164d00000002140000000000000000000000000000000000000310800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" L2AutoSourceMac="false" L2AutoDestMac="false" L3AutoSourceIp="false" L3AutoDestIp="false" L3AutoHeaderCheck="false" L3AutoTotLen="false" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="false" L4AutoTotLen="false" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.9" L4AllowPortOverride="true"/>
+  <Frame name="PcapFrame11" bytesHexString="0180c20000020013c4120f0d88090101011480000013c4120f00000d800000164500000002140000000000000000000000000000000000000310800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" L2AutoSourceMac="false" L2AutoDestMac="false" L3AutoSourceIp="false" L3AutoDestIp="false" L3AutoHeaderCheck="false" L3AutoTotLen="false" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="false" L4AutoTotLen="false" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.10" L4AllowPortOverride="true"/>
+  <Frame name="PcapFrame12" bytesHexString="0180c2000002000e8316f5108809010101148000000e8316f500000d8000001904000000021480000013c4120f00000d80000016750000000310800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" L2AutoSourceMac="false" L2AutoDestMac="false" L3AutoSourceIp="false" L3AutoDestIp="false" L3AutoHeaderCheck="false" L3AutoTotLen="false" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="false" L4AutoTotLen="false" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.11" L4AllowPortOverride="true"/>
+  <Frame name="PcapFrame13" bytesHexString="0180c2000002000e8316f5108809010101148000000e8316f500000d8000001904000000021480000013c4120f00000d80000016750000000310800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" L2AutoSourceMac="false" L2AutoDestMac="false" L3AutoSourceIp="false" L3AutoDestIp="false" L3AutoHeaderCheck="false" L3AutoTotLen="false" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="false" L4AutoTotLen="false" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.12" L4AllowPortOverride="true"/>
+  <Frame name="PcapFrame14" bytesHexString="0180c2000002000e8316f5108809010101148000000e8316f500000d8000001904000000021480000013c4120f00000d80000016450000000310800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" L2AutoSourceMac="false" L2AutoDestMac="false" L3AutoSourceIp="false" L3AutoDestIp="false" L3AutoHeaderCheck="false" L3AutoTotLen="false" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="false" L4AutoTotLen="false" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.13" L4AllowPortOverride="true"/>
+  <Frame name="PcapFrame15" bytesHexString="0180c2000002000e8316f5108809010101148000000e8316f500000d800000190c000000021480000013c4120f00000d80000016450000000310800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" L2AutoSourceMac="false" L2AutoDestMac="false" L3AutoSourceIp="false" L3AutoDestIp="false" L3AutoHeaderCheck="false" L3AutoTotLen="false" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="false" L4AutoTotLen="false" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.14" L4AllowPortOverride="true"/>
+  <Frame name="PcapFrame16" bytesHexString="0180c20000020013c4120f0d88090101011480000013c4120f00000d800000160d00000002148000000e8316f500000d800000190c0000000310800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" L2AutoSourceMac="false" L2AutoDestMac="false" L3AutoSourceIp="false" L3AutoDestIp="false" L3AutoHeaderCheck="false" L3AutoTotLen="false" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="false" L4AutoTotLen="false" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.15" L4AllowPortOverride="true"/>
+  <Frame name="PcapFrame17" bytesHexString="0180c20000020013c4120f0d88090101011480000013c4120f00000d800000163d00000002148000000e8316f500000d800000190c0000000310800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" L2AutoSourceMac="false" L2AutoDestMac="false" L3AutoSourceIp="false" L3AutoDestIp="false" L3AutoHeaderCheck="false" L3AutoTotLen="false" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="false" L4AutoTotLen="false" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.16" L4AllowPortOverride="true"/>
+  <Frame name="PcapFrame18" bytesHexString="0180c2000002000e8316f5108809010101148000000e8316f500000d800000193c000000021480000013c4120f00000d800000160d0000000310800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" L2AutoSourceMac="false" L2AutoDestMac="false" L3AutoSourceIp="false" L3AutoDestIp="false" L3AutoHeaderCheck="false" L3AutoTotLen="false" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="false" L4AutoTotLen="false" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.17" L4AllowPortOverride="true"/>
+  <Frame name="PcapFrame19" bytesHexString="0180c2000002000e8316f5108809010101148000000e8316f500000d800000193c000000021480000013c4120f00000d800000163d0000000310800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" L2AutoSourceMac="false" L2AutoDestMac="false" L3AutoSourceIp="false" L3AutoDestIp="false" L3AutoHeaderCheck="false" L3AutoTotLen="false" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="false" L4AutoTotLen="false" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.18" L4AllowPortOverride="true"/>
+  <Frame name="PcapFrame20" bytesHexString="0180c20000020013c4120f0d88090101011480000013c4120f00000d800000163d00000002148000000e8316f500000d800000193c0000000310800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" L2AutoSourceMac="false" L2AutoDestMac="false" L3AutoSourceIp="false" L3AutoDestIp="false" L3AutoHeaderCheck="false" L3AutoTotLen="false" L3LinkWithL2="true" L4AutoTcpChecksum="false" L4AutoUdpChecksum="false" L4AutoTotLen="false" L4LinkWithL3="true" L3AutoArpSHA="false" L3AutoArpSPA="false" L3AutoArpTHA="false" L3AutoArpTPA="false" L3AutoIpv6Source="false" L3AutoIpv6Destination="false" L3AutoIpv6PayloadLength="false" frameBlastingFrames="//@FlowTemplate.0/@frameBlastingFrames.19" L4AllowPortOverride="true"/>
+  <ByteBlowerGuiPort name="PORT_1" theSourceOfFlow="//@Flow.0" natted="false" mtu="1500">
+    <layer2Configuration xsi:type="byteblowerguimodel_v1_3:EthernetConfiguration">
+      <MacAddress>
+        <bytes>0</bytes>
+        <bytes>-1</bytes>
+        <bytes>-69</bytes>
+        <bytes>52</bytes>
+        <bytes>0</bytes>
+        <bytes>1</bytes>
+      </MacAddress>
+    </layer2Configuration>
+    <ipv4Configuration isActive="true" addressConfiguration="Fixed">
+      <IpAddress>
+        <bytes>10</bytes>
+        <bytes>10</bytes>
+        <bytes>10</bytes>
+        <bytes>1</bytes>
+      </IpAddress>
+      <Netmask>
+        <bytes>-1</bytes>
+        <bytes>-1</bytes>
+        <bytes>-1</bytes>
+        <bytes>0</bytes>
+      </Netmask>
+      <DefaultGateway>
+        <bytes>10</bytes>
+        <bytes>10</bytes>
+        <bytes>10</bytes>
+        <bytes>1</bytes>
+      </DefaultGateway>
+    </ipv4Configuration>
+    <ipv6Configuration isActive="false" addressConfiguration="Fixed" prefixLength="64">
+      <IpAddress>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </IpAddress>
+      <DefaultRouter>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </DefaultRouter>
+    </ipv6Configuration>
+    <ByteBlowerGuiPortConfiguration physicalServerAddress="10.8.254.107" physicalInterfaceId="0" physicalPortId="0" physicalServerType="ByteBlower"/>
+  </ByteBlowerGuiPort>
+  <ByteBlowerGuiPort name="PORT_2" theDestinationOfFlow="//@Flow.0" natted="false" mtu="1500">
+    <layer2Configuration xsi:type="byteblowerguimodel_v1_3:EthernetConfiguration">
+      <MacAddress>
+        <bytes>0</bytes>
+        <bytes>-1</bytes>
+        <bytes>-69</bytes>
+        <bytes>52</bytes>
+        <bytes>0</bytes>
+        <bytes>2</bytes>
+      </MacAddress>
+    </layer2Configuration>
+    <ipv4Configuration isActive="true" addressConfiguration="Fixed">
+      <IpAddress>
+        <bytes>10</bytes>
+        <bytes>10</bytes>
+        <bytes>10</bytes>
+        <bytes>2</bytes>
+      </IpAddress>
+      <Netmask>
+        <bytes>-1</bytes>
+        <bytes>-1</bytes>
+        <bytes>-1</bytes>
+        <bytes>0</bytes>
+      </Netmask>
+      <DefaultGateway>
+        <bytes>10</bytes>
+        <bytes>10</bytes>
+        <bytes>10</bytes>
+        <bytes>1</bytes>
+      </DefaultGateway>
+    </ipv4Configuration>
+    <ipv6Configuration isActive="false" addressConfiguration="Fixed" prefixLength="64">
+      <IpAddress>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </IpAddress>
+      <DefaultRouter>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+        <bytes>0</bytes>
+      </DefaultRouter>
+    </ipv6Configuration>
+    <ByteBlowerGuiPortConfiguration physicalServerAddress="10.8.254.107" physicalInterfaceId="0" physicalPortId="1" physicalServerType="ByteBlower"/>
+  </ByteBlowerGuiPort>
+</byteblowerguimodel_v1_3:ByteBlowerProject>
